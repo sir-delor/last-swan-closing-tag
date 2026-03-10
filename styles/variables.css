@@ -1,0 +1,27 @@
+:root {
+  --font-primary: "Inter", sans-serif;
+  --font-accent: "PressStart2P", monospace;
+
+  /* Цвета для светлой темы */
+  --bg-light: #fff;
+  --bg-dark: #000;
+
+  /* Градиенты */
+  --gradient:
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+
+  /* переменные fill */
+  --black: var(--bg-dark);
+  --white: var(--bg-light);
+  --red: #ff0000;
+
+  --contour-fill: #000; /* контур */
+  --core-fill: transparent; /* сердцевина */
+  --main-body-fill: transparent; /* основное тело */
+ /* --spark-fill: red;  искры вокруг сердца */
+
+  --spark-fill: transparent;
+}
+

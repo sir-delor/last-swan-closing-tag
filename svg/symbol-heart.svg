@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <defs>
+    <symbol id="heart-symbol" viewBox="0 0 24 24">
+      <path 
+	  fill="#000" 
+	  d="M6 0H3v3h3zm3 0H6v3h3zM3 3H0v3h3zm0 3H0v3h3zm0 3H0v3h3zm9-9H9v3h3zM6 12H3v3h3zm3 3H6v3h3zm3 3H9v3h3zm9-18h3v3h-3zm-3 0h3v3h-3zm6 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm-9-9h3v3h-3zm6 12h3v3h-3zm-3 3h3v3h-3zm-3 3h3v3h-3zm0-15h-3v3h3zm0 18h-3v3h3z"/>
+    </symbol>
+  </defs>
+</svg>

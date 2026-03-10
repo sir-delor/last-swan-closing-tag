@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Закрывающий тег</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./fonts/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/variables.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/globals.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/animations.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/effects.css" />
+
+    <link rel="icon" href="svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="svg/favicon.png" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <section class="site-header">
+        <h1 class="header-title">&lt;/HTML&gt;</h1>
+        <p class="title-abstract">закрывающий тег</p>
+      </section>
+    </header>
+
+    <main class="main-story">
+      <!-- Самостоятельные каротчки историй учебы -->
+      <div class="data-card-collection">
+        <!-- Карточка_1 первой истории: Начала  несколько <article class="card"-->
+        <article class="card">
+          <header class="card-header">
+            <h2 class="card-title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+          </header>
+
+          <figure class="card-image-wrapper space-zoom">
+            <img
+              src="./images/neon-light.jpg"
+              alt="Неоновая подсветка, символизирующая начало пути и новые возможности"
+              class="card-image"
+            />
+            <div class="space" id="space-container">
+              <!-- 20 звёзд -->
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+              <div class="star"></div>
+            </div>
+            <div class="pixel-overlay"></div>
+          </figure>
+
+          <div class="card-body">
+            <p class="card-paragraph">
+              Это было самое начало пути. На этом этапе важно было проникнуться
+              основами и настроиться на учёбу. И, возможно,подумать, как новые
+              знания могут повлиять на ваше будущее.
+            </p>
+            <p class="card-paragraph">
+              Начало всегда похоже на темноту, на полёт в неизвестность.
+              Вспыхивают различные проблески чего‑то нового, но пока ещё
+              непонятного. Среди тьмы мелькает силуэт маяка — слабый, едва
+              различимый, но дающий надежду. И в полёте размышлений неизменно
+              возникают вопросы: «Что будет дальше? Когда придёт конец этому
+              пути?»
+            </p>
+          </div>
+
+          <footer class="card-footer">
+            <div class="like-container is-liked">
+              <!-- Иконка like -->
+              <button
+                class="card__icon-button like-icon heart icon-button"
+                aria-label="Нравится"
+                aria-pressed="false"
+              >
+                <svg
+                  class="like-icon"
+                  width="39"
+                  height="36"
+                  aria-hidden="true"
+                >
+                  <use href="#core" class="core-heart" x="6" y="6"></use>
+                  <use href="#contour" class="contour"></use>
+                  <use href="#main-body" class="main-body"></use>
+                  <use href="#spark" class="spark"></use>
+                </svg>
+              </button>
+              <!--  кнопка like -->
+              <button class="card__like-button like-icon button_slide-in">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Карточка_2: Спринт 1 -->
+        <article class="card">
+          <header class="card-header">
+            <h2 class="card-title">1 спринт: Я — чистый лист</h2>
+          </header>
+
+          <figure class="card-image-wrapper">
+            <div class="container-ray" id="container">
+              <img
+                src="images/studying-night-2.webp"
+                alt="Луч фонарика прорезает тьму, высвечивая путь к решению — 
+              символ поиска идей в темноте неопределённости"
+                class="card-image"
+              />
+              <div class="neon-container">
+                <div class="neon-rectangle"></div>
+              </div>
+              <div class="overlay-ray" id="overlay"></div>
+              <div class="circle-ray" id="circle"></div>
+            </div>
+
+            <figcaption class="visually-hidden">
+              Иллюстрация к истории 1 спринт: Я — чистый лист
+            </figcaption>
+          </figure>
+
+          <div class="card-body">
+            <p class="card-paragraph">
+              На первых этапах мы работали со страхами и сомнениями, которые
+              часто испытывают новички. Один из них — страх перед чистым листом.
+              Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто
+              за этим ощущением скрываются более глубокие вопросы: с чего
+              начать? А вдруг будет слишком сложно? что, если я не справлюсь?
+            </p>
+            <p class="card-paragraph">
+              Картинка начинается с пикселя, а код — с тега. В начале
+              приходилось светить фонариком, чтобы отыскать нужные элементы и
+              собрать картину воедино — будто ищешь выключатель в тёмной
+              комнате: знаешь, где он, но пока найдёшь, пару раз споткнёшься.
+            </p>
+            <p class="card-paragraph">
+              После первого спринта страх чистого листа немного отступил: теперь
+              я хотя бы знаю, куда нажимать, чтобы этот лист перестал быть
+              чистым! Поначалу пугали даже базовые теги — казалось, что
+              &lt;div&gt; — какая‑то магическая формула, а class — секретный
+              пароль. Мысли крутились вокруг: «А вдруг что‑то пропущу?», «А если
+              браузер меня не поймёт?».
+            </p>
+            <p class="card-paragraph">
+              Но браузер, к счастью, — парень терпеливый, а ошибки в консоли —
+              не приговор, а подсказки. Они словно говорят: «Дружище, тут
+              проверь отступы» или «Закрывающий тег где, а?».
+            </p>
+            <p class="card-paragraph">
+              Теперь я точно знаю: лучше сделать криво, чем не сделать вообще.
+              Мой первый блок был кривее забора у деревенского деда, стили
+              съезжали, кнопка реагировала на клик с видом, будто делает
+              одолжение… Но она работала! И это было главное.
+            </p>
+            <p class="card-paragraph">
+              А ещё понял: фронтенд — как конструктор LEGO. Сначала ищешь
+              деталь, потом думаешь, куда её пристроить, а потом — щёлк! — всё
+              встаёт на место. И хочется добавить ещё кусочек. Чистый лист уже
+              не пугает — он манит. Пора писать следующий тег!
+            </p>
+          </div>
+
+          <footer class="card-footer">
+            <div class="like-container is-liked">
+              <!-- Иконка like -->
+              <button
+                class="card__icon-button like-icon heart icon-button"
+                aria-label="Нравится"
+                aria-pressed="false"
+              >
+                <svg
+                  class="like-icon"
+                  width="39"
+                  height="36"
+                  aria-hidden="true"
+                >
+                  <use href="#core" class="core-heart" x="6" y="6"></use>
+                  <use href="#contour" class="contour"></use>
+                  <use href="#main-body" class="main-body"></use>
+                  <use href="#spark" class="spark"></use>
+                </svg>
+              </button>
+              <!--  кнопка like -->
+              <button class="card__like-button like-icon button_slide-in">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </footer>
+        </article>
+
+        <!--       Карточка_3  -->
+        <article class="card">
+          <header class="card-header">
+            <h2 class="card-title">1 спринт: А если не получится?</h2>
+          </header>
+
+          <figure class="card-image-wrapper">
+            <div class="image-container">
+              <img
+                src="images/time_gone.png"
+                alt="Разбитые часы и кружка, разбросанные бумаги и мусор символизируют беспорядок в делах"
+                class="visible-image time_gone"
+              />
+
+              <img
+                src="images/capybara-950-mask.png"
+                alt="Маленький зверёк стоит неподвижно, беспомощно разведя лапки. Его поза — живой символ безысходности перед неизвестностью: крошечный силуэт на фоне огромного, непознанного мира."
+                class="visible-image capybara-mask"
+              />
+
+              <img
+                src="images/laptop-code.jpeg"
+                alt="Стильный рабочий стол программиста с неоновой подсветкой, монитором с кодом, клавиатурой и аксессуарами"
+                class="hidden-image"
+              />
+            </div>
+            <figcaption class="visually-hidden">
+              Иллюстрация к истории 1 спринт: А если не получится?
+            </figcaption>
+          </figure>
+
+          <div class="card-body">
+            <p class="card-paragraph">
+              Первый проект — позади! Но это всё ещё самое начало пути. Радость
+              могла быстро померкнуть и смениться ожиданием провала. Или вы,
+              наоборот, могли вдохновиться успехами и поверить в себя.
+            </p>
+            <p class="card-paragraph">
+              «Что, если не получится?» — вопрос, который вызывает тревогу и
+              сомнения. Неудача может показаться провалом, но она также может
+              стать шансом для улучшения. Возможно, ты слишком увлекаешься
+              мелкими задачами и забываешь о главном — своей цели. Я вспоминаю
+              свои прошлые успехи, даже небольшие, и черпаю в них силы и
+              мотивацию.
+            </p>
+          </div>
+
+          <footer class="card-footer">
+            <div class="like-container is-liked">
+              <!-- Иконка like -->
+              <button
+                class="card__icon-button like-icon heart icon-button"
+                aria-label="Нравится"
+                aria-pressed="false"
+              >
+                <svg
+                  class="like-icon"
+                  width="39"
+                  height="36"
+                  aria-hidden="true"
+                >
+                  <use href="#core" class="core-heart" x="6" y="6"></use>
+                  <use href="#contour" class="contour"></use>
+                  <use href="#main-body" class="main-body"></use>
+                  <use href="#spark" class="spark"></use>
+                </svg>
+              </button>
+              <!--  кнопка like -->
+              <button class="card__like-button like-icon button_slide-in">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </footer>
+        </article>
+
+        <!--       Карточка_4  -->
+        <article class="card">
+          <header class="card-header">
+            <h2 class="card-title">2 спринт: Погоня за идеалом</h2>
+          </header>
+
+          <figure class="card-image-wrapper" id="IT-table">
+            <img
+              src="images/IT-table.jpeg"
+              alt="Стильный рабочий стол программиста с неоновой подсветкой, монитором с кодом, клавиатурой и аксессуарами"
+              class="card-image IT-table"
+            />
+            <div class="neon-strip"></div>
+            <figcaption class="visually-hidden">
+              Иллюстрация к истории 2 спринт: Погоня за идеалом
+            </figcaption>
+          </figure>
+
+          <div class="card-body">
+            <p class="card-paragraph">
+              На этом этапе вы уже достаточно разбирались в основах вёрстки,
+              чтобы понять, как много ещё впереди. Вы могли попытаться погнаться
+              за идеалом и понять, что он недостижим. А, может, вы вовсе и не
+              подвержены перфекционизму и вместо того, чтобы сделать идеально,
+              старались просто сделать.
+            </p>
+            <p class="card-paragraph">
+              Идеалы могут казаться недостижимыми, но мечтать о них необходимо.
+              Именно мечты побуждают нас к великим свершениям. Если бы Леонардо
+              да Винчи не мечтал о возможности полёта, а Константин Циолковский
+              не стремился познать тайны космоса, человечество, возможно, до сих
+              пор ограничивалось бы передвижением по земле и не достигло бы тех
+              высот, которые имеем сейчас. Мечты — двигатель прогресса, они
+              побуждают нас искать новые пути и преодолевать границы возможного.
+            </p>
+          </div>
+
+          <footer class="card-footer">
+            <div class="like-container is-liked">
+              <!-- Иконка like -->
+              <button
+                class="card__icon-button like-icon heart icon-button"
+                aria-label="Нравится"
+                aria-pressed="false"
+              >
+                <svg
+                  class="like-icon"
+                  width="39"
+                  height="36"
+                  aria-hidden="true"
+                >
+                  <use href="#core" class="core-heart" x="6" y="6"></use>
+                  <use href="#contour" class="contour"></use>
+                  <use href="#main-body" class="main-body"></use>
+                  <use href="#spark" class="spark"></use>
+                </svg>
+              </button>
+              <!--  кнопка like -->
+              <button class="card__like-button like-icon button_slide-in">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </footer>
+        </article>
+
+        <!--    Карточка_5  -->
+        <article class="card">
+          <header class="card-header">
+            <h2 class="card-title">2 спринт: О тех, кто рядом</h2>
+          </header>
+
+          <figure class="card-image-wrapper text-container_help">
+            <div class="hover-block">
+              <div class="question-tag"></div>
+              <div class="images-container">
+                <div class="image">
+                  <img
+                    src="/images/support-nearby_card_5/group-01.png"
+                    alt="Человек тянется за ответами на вопрос"
+                    class="card-image_help"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="image">
+                  <img
+                    src="/images/support-nearby_card_5/group-02.png"
+                    alt="Две человека в поисках вопросов - ответов"
+                    class="card-image_help"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="image">
+                  <img
+                    src="/images/support-nearby_card_5/group-03.png"
+                    alt="Три человека ищут отыветы"
+                    class="card-image_help"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="image">
+                  <img
+                    src="/images/support-nearby_card_5/group-04.png"
+                    alt="Четвертый человек пришел за отыветами"
+                    class="card-image_help"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="image">
+                  <img
+                    src="/images/support-nearby_card_5/group-05.png"
+                    alt="Рука ловит нужный тег"
+                    class="card-image_help"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="image">
+                  <img
+                    src="/images/support-nearby_card_5/group-06.png"
+                    alt="Рука ловит падающий знак вопроса"
+                    class="card-image_help"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="image">
+                  <img
+                    src="/images/support-nearby_card_5/group-07.png"
+                    alt="Рука, тянущаяся за ответами на вопрос"
+                    class="card-image_help"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+
+              <div class="hover-block_qnd images-container">
+                <div class="text-container">
+                  <span class="question_qnd">?</span>
+                  <span class="exclamation_qnd">&lt;/question&gt;</span>
+                </div>
+              </div>
+            </div>
+            <figcaption class="visually-hidden"></figcaption>
+          </figure>
+
+          <div class="card-body">
+            <p class="card-paragraph">
+              Всё это время вы были не одиноки (хотя, возможно, иногда и
+              чувствовали, что одни против целого мира). Вас окружали
+              одногруппники, команда сопровождения и просто близкие люди,
+              которым можно пожаловаться, если очередной макет просто так не
+              поддавался. Осваивать что-то новое легче, когда рядом есть
+              единомышленники, не правда ли?
+            </p>
+
+            <section class="poem-container" aria-labelledby="poem-title">
+              <h2 id="poem-title">«Путь, освещённый знанием»</h2>
+
+              <button
+                class="fade-btn"
+                aria-expanded="false"
+                aria-controls="poem-content"
+                type="button"
+              >
+                Читать полностью
+              </button>
+              <div class="poem">
+                <p>
+                  А что?<br />
+                  А как?<br />
+                  И почему?<br />
+                  Где, когда и отчего?
+                </p>
+
+                <p>
+                  Что случилось? Где ответ?<br />
+                  Как сложить весь этот бред<br />
+                  В стройную картину кода,<br />
+                  Где нет багов, нет вреда?
+                </p>
+              </div>
+
+              <div id="poem-content" class="poem" hidden>
+                <p>
+                  Куда пропал мой лейаут?<br />
+                  Что не так с JavaScript?<br />
+                  Где начало, где конец?<br />
+                  Кто нам даст на всё ответ?
+                </p>
+
+                <p>
+                  А наставник улыбнётся,<br />
+                  На плечо мне обопрётся,<br />
+                  Тихо скажет: «Не спеши,<br />
+                  Путь познанья — не в тиши.<br />
+                  В каждом „что?“ найдёшь фикс,<br />
+                  В каждом „как?“ — код‑сюрприз».
+                </p>
+
+                <p>
+                  Куратор вдумчиво вздохнёт,<br />
+                  Спокойно слово принесёт:<br />
+                  «Вопросы — мудрости урок,<br />
+                  Разбивай на островки.<br />
+                  План, порядок, глубина —<br />
+                  Вот архитектура, вот весна».
+                </p>
+                <p>
+                  А поддержка?<br />
+                  Вот она! Рядом!<br />
+                  Дебаг подберёт.<br />
+                  Даст взгляд хладнокровный.<br />
+                </p>
+                Направит, вдохновит, сбережёт,<br />
+                От падений сайт спасёт.<br />
+                «Смело спрашивай, — шепчут вновь, —<br />
+                Мы с тобой, твой код — любовь».
+                <p></p>
+                А что?<br />
+                А как?<br />
+                И почему?<br />
+                Вопросы вьются, как струна,<br />
+                В поисках живого смысла,<br />
+                В танце вечного «а вдруг?..»
+
+                <p></p>
+
+                <p>
+                  Теперь я знаю: не один,<br />
+                  Мир открыт, и путь — един.
+                </p>
+              </div>
+            </section>
+          </div>
+          <footer class="card-footer">
+            <div class="like-container is-liked">
+              <!-- Иконка like -->
+              <button
+                class="card__icon-button like-icon heart icon-button"
+                aria-label="Нравится"
+                aria-pressed="false"
+              >
+                <svg
+                  class="like-icon"
+                  width="39"
+                  height="36"
+                  aria-hidden="true"
+                >
+                  <use href="#core" class="core-heart" x="6" y="6"></use>
+                  <use href="#contour" class="contour"></use>
+                  <use href="#main-body" class="main-body"></use>
+                  <use href="#spark" class="spark"></use>
+                </svg>
+              </button>
+              <!--  кнопка like -->
+              <button class="card__like-button like-icon button_slide-in">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </footer>
+        </article>
+
+        <!--   Карточка_6   -->
+        <article class="card">
+          <header class="card-header">
+            <h2 class="card-title">3 спринт: Обходные стратегии</h2>
+          </header>
+
+
+          <figure class="card-image-wrapper bin-code">
+            <img
+              src="images/binary_code_1440.jpg"
+              alt="Бинарный код"
+              class="card-image card-image__bin-code"
+            />
+            <div class="code-rain"></div>
+            <figcaption class="visually-hidden">
+              Иллюстрация к истории 3 спринт: Обходные стратегии
+            </figcaption>
+          </figure>
+
+          <div class="card-body">
+            <p class="card-paragraph">
+              На этом курсе вы постоянно решали разные задачи. В какой-то момент
+              вам могло показаться, что решения просто иссякли. Значит, пришло
+              время посмотреть на задачу под другим углом.
+            </p>
+            <p class="card-paragraph">
+              Иногда кажется, что ты зашёл в тупик, но это не конец пути, а
+              возможность найти новые, нестандартные решения.
+            </p>
+            <p class="card-paragraph">
+              Конечно, были моменты непонимания и ступора. Как же я из них
+              выходил?
+            </p>
+            <p class="card-paragraph">
+              Мне помогли занятия по soft skills и знания, которые я на них
+              получил, а именно:
+            </p>
+            <ul>
+              <li>
+                <p class="card-paragraph">
+                  * Разбиение задачи на подзадачи: маленькая задача закрывает
+                  большую.
+                </p>
+              </li>
+              <li>
+                <p class="card-paragraph">
+                  * Отложение задачи: иногда полезно отойти от неё на время.
+                  Перерыв помогает взглянуть на проблему свежим взглядом и найти
+                  новое решение.
+                </p>
+              </li>
+              <li>
+                <p class="card-paragraph">
+                  * Прогулки на свежем воздухе помогали мне сменить обстановку и
+                  взглянуть на мир с новой стороны.
+                </p>
+              </li>
+              <li>
+                <p class="card-paragraph">
+                  * Использование аналогий: поиск решений, которые уже были
+                  кем-то найдены ранее.
+                </p>
+              </li>
+              <li>
+                <p class="card-paragraph">
+                  * Вопросы к наставникам и сопровождение курса: консультации с
+                  экспертом.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <footer class="card-footer">
+            <div class="like-container is-liked">
+              <!-- Иконка like -->
+              <button
+                class="card__icon-button like-icon heart icon-button"
+                aria-label="Нравится"
+                aria-pressed="false"
+              >
+                <svg
+                  class="like-icon"
+                  width="39"
+                  height="36"
+                  aria-hidden="true"
+                >
+                  <use href="#core" class="core-heart" x="6" y="6"></use>
+                  <use href="#contour" class="contour"></use>
+                  <use href="#main-body" class="main-body"></use>
+                  <use href="#spark" class="spark"></use>
+                </svg>
+              </button>
+              <!--  кнопка like -->
+              <button class="card__like-button like-icon button_slide-in">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </footer>
+        </article>
+
+        <!--  Карточка_7  -->
+        <article class="card">
+          <header class="card-header">
+            <h2 class="card-title">3 спринт: Когда опускаются руки</h2>
+          </header>
+
+          <figure class="card-image-wrapper">
+            <img
+              src="images/turtle-thoughts-7.JPG"
+              alt="Маленькая черепаха с узорчатым панцирем в пластиковом контейнере. Символ спокойствия."
+              class="card-image"
+            />
+
+            <div class="scene-sun">
+              <div class="sun">
+                <div class="glare"></div>
+                <div class="wave-ring"></div>
+                <div class="wave-ring"></div>
+                <div class="wave-ring"></div>
+              </div>
+            </div>
+
+            <figcaption class="visually-hidden">
+              Иллюстрация к истории 3 спринт: «Когда опускаются руки». Черепаха
+              символизирует спокойствие.
+            </figcaption>
+          </figure>
+
+          <div class="card-body">
+            <p class="card-paragraph">
+              Во время учёбы часто возникает чувство, когда не знаешь, за что
+              хвататься. Вроде и проектную пора сдавать, и задачи хочется
+              порешать, и в теории получше разобраться, и жизнь не забыть
+              пожить. В такие моменты очень нужна концентрация. Вспомните,
+              откуда вы её черпали.
+            </p>
+            <p class="card-paragraph">
+              В процессе выполнения задачи возникали моменты экзистенциального
+              кризиса, когда стремление к завершению проекта казалось
+              непреодолимым препятствием. Однако, в критические моменты,
+              созерцая взгляд черепахи, пребывающей в состоянии медитативного
+              покоя, я обретал внутреннее умиротворение. Это созерцание
+              способствовало активации механизмов релаксации и восстановлению
+              психоэмоционального баланса, позволяя продолжить работу с новыми
+              силами и сосредоточенностью.
+            </p>
+          </div>
+
+          <footer class="card-footer">
+            <div class="like-container is-liked">
+              <!-- Иконка like -->
+              <button
+                class="card__icon-button like-icon heart icon-button"
+                aria-label="Нравится"
+                aria-pressed="false"
+              >
+                <svg
+                  class="like-icon"
+                  width="39"
+                  height="36"
+                  aria-hidden="true"
+                >
+                  <use href="#core" class="core-heart" x="6" y="6"></use>
+                  <use href="#contour" class="contour"></use>
+                  <use href="#main-body" class="main-body"></use>
+                  <use href="#spark" class="spark"></use>
+                </svg>
+              </button>
+              <!--  кнопка like -->
+              <button class="card__like-button like-icon button_slide-in">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </footer>
+        </article>
+
+        <!--  Карточка_8  -->
+        <article class="card">
+          <header class="card-header">
+            <h2 class="card-title">«Сейчас я здесь»</h2>
+          </header>
+
+          <figure class="card-image-wrapper figure__block-completion">
+            <img
+              src="images/knowledge-tree-8.jpeg"
+              alt="На картинке дерево с символами образования (книги,
+             ручки, глобусы) на ветвях. У корней — семена, 
+             символизирующие мечты и цели. 
+             Дерево иллюстрирует рост и развитие через образование:
+              основа вдохновляет на путь знаний и достижение целей."
+              class="card-image block-completion"
+            />
+
+            <figcaption class="visually-hidden">
+              Иллюстрация к истории: «Сейчас я здесь»
+            </figcaption>
+          </figure>
+
+          <div class="card-body">
+            <p class="card-paragraph">
+              Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
+              Во-первых, впереди ещё много материала про «красотищу». Во-вторых,
+              с окончанием курса учёба не заканчивается. Вёрстка — это целый
+              мир. И этот мир постоянно меняется. Познать его полностью не
+              получится, но это тот случай, когда важен сам процесс познания.
+              Ведь часто путь — и есть результат.
+            </p>
+            <p class="card-paragraph">
+              Финальный код, последнее задание, слова прощания от преподавателя…
+            </p>
+            <p class="card-paragraph">
+              Я делаю паузу и осознаю: этап завершён.
+            </p>
+            <p class="card-paragraph">
+              Что я чувствую? Вдохновение. Благодарность. Уверенность в
+              следующем шаге.
+            </p>
+            <p class="card-paragraph">
+              Я продолжаю мечтать — осознанно и целеустремлённо. Ведь только
+              мечтая, понимаешь, куда идти. Цикл жизни прост и прекрасен: мечта
+              → цель → действие → радость результата → новая мечта. И так без
+              конца.
+            </p>
+
+            <blockquote
+              class="quote-block"
+              cite="https://practicum.yandex.ru/about/?from=main_header-about_button#:~:text=%D0%94%D0%B0%2C%20%D0%BC%D1%8B%C2%A0%D0%BD%D0%B5%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D0%B5%D1%87%D1%82%D0%B0%D1%82%D0%B5%D0%BB%D0%B8.%20%D0%9D%D0%BE%C2%A0%D1%83%C2%A0%D0%BD%D0%B0%D1%81%20%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B0%D0%B5%D1%82%D1%81%D1%8F%C2%A0%E2%80%94%20%D0%BF%D0%BE%D1%82%D0%BE%D0%BC%D1%83%20%D1%87%D1%82%D0%BE%C2%A0%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D1%83%C2%A0%D0%BD%D0%B0%D1%88%D0%B8%D1%85%20%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%BE%D0%B2"
+            >
+              <p class="quote-text">
+                📌 Да, мы немного мечтатели. Но у нас получается — потому что
+                получается у наших студентов
+              </p>
+            </blockquote>
+          </div>
+
+          <footer class="card-footer is-liked">
+            <div class="like-container">
+              <!-- Иконка like -->
+              <button
+                class="card__icon-button like-icon heart icon-button"
+                aria-label="Нравится"
+                aria-pressed="false"
+              >
+                <svg
+                  class="like-icon"
+                  width="39"
+                  height="36"
+                  aria-hidden="true"
+                >
+                  <use href="#core" class="core-heart" x="6" y="6"></use>
+                  <use href="#contour" class="contour"></use>
+                  <use href="#main-body" class="main-body"></use>
+                  <use href="#spark" class="spark"></use>
+                </svg>
+              </button>
+              <!--  кнопка like -->
+              <button class="card__like-button like-icon button_slide-in">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </main>
+    <!--  Футер сайта с кнопкой  -->
+    <footer class="footer">
+      <button
+        class="btn btn-container btn--save save-button save-btn"
+        aria-label="Сохранить на память"
+        id="openModal"
+        type="button"
+      >
+        <svg class="icon-save" aria-hidden="true">
+          <use href="/svg/floppy.svg" />
+        </svg>
+        Сохранить на память
+      </button>
+      <dialog id="myModal">
+        <div class="modal-content">
+          <svg class="icon-save" aria-hidden="true">
+            <use href="/svg/floppy.svg"></use>
+          </svg>
+          <p>Вставьте дискету, чтобы продолжить</p>
+        </div>
+
+        <button
+          id="closeModal"
+          class="close-btn btn btn-container btn--save"
+          type="button"
+        >
+          OK
+        </button>
+      </dialog>
+    </footer>
+
+    <!-- Библиотека символов -->
+    <div class="symbol-library">
+      <!-- like-icon Сердце: скрытые элементы -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        id="like-icon"
+        class="like-icon"
+        width="39"
+        height="35"
+        display="none"
+        viewBox="0 0 39 35"
+      >
+        <!--  Сердце: полностью с искрами -->
+        <g id="like-heart">
+          <!--  Сердце: серцевина -->
+          <g id="core">
+            <path
+              fill="var(--core-fill, transparent)"
+              class="core"
+              d="M15 12h-3v3h3zm0-6h-3v3h3zm0 3h-3v3h3zm0-6h-3v3h3zm0 6h3v3h-3zm-3 0H9v3h3z"
+            />
+          </g>
+          <!-- Сердце: основное тело -->
+          <g id="main-body">
+            <path
+              class="main-body"
+              fill="var(--main-body-fill, transparent)"
+              d="M12 9H9v3h3zm3 3h-3v3h3zm3-3h-3v3h3zm-6 6H9v3h3zm3 0h-3v3h3zm0 3h-3v3h3zm3-6h-3v3h3zm0 9h-3v3h3zm0-3h-3v3h3zm9-9h3v3h-3zm-3 0h3v3h-3zm3 3h3v3h-3zm-3 0h3v3h-3zm-3-3h3v3h-3zm6 6h3v3h-3zm-3 0h3v3h-3zm0 3h3v3h-3zm-3-6h3v3h-3zm0 9h3v3h-3zm0-3h3v3h-3zm0 3h-3v3h3zm0 3h-3v3h3z"
+            />
+          </g>
+          <!-- Сердце: контур -->
+          <g id="contour">
+            <path
+              class="contour"
+              fill="var(--contour-fill, #000)"
+              d="M12 6H9v3h3zm3 0h-3v3h3zM9 9H6v3h3zm0 3H6v3h3zm0 3H6v3h3zm9-9h-3v3h3zm-6 12H9v3h3zm3 3h-3v3h3zm3 3h-3v3h3zm9-18h3v3h-3zm-3 0h3v3h-3zm6 3h3v3h-3zm0 3h3v3h-3zm0 3h3v3h-3zm-9-9h3v3h-3zm6 12h3v3h-3zm-3 3h3v3h-3zm-3 3h3v3h-3zm0 3h-3v3h3zm0-18h-3v3h3z"
+            />
+          </g>
+          <!-- Сердце: искры  -->
+          <g id="spark">
+            <path
+              class="spark"
+              fill="var(--spark-fill, red)"
+              d="M36 13h3v3h-3zm-9 14h3v3h-3zm-9 6h3v3h-3zm-9-6h3v3H9zM24 0h3v3h-3zm9 3h3v3h-3zM3 3h3v3H3zm9-3h3v3h-3zM0 13h3v3H0z"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <script src="./scripts/like.js"></script>
+    <script src="./scripts/ray.js"></script>
+    <script src="./scripts/modal.js"></script>
+  </body>
+</html>

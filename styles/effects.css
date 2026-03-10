@@ -1,0 +1,634 @@
+/* Карточка_1
+Анимация полета в звездном пространстве */
+@keyframes fly {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    /* Перемещаем звезду к краю экрана */
+    transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(0);
+    opacity: 0;
+  }
+}
+
+.space:hover {
+  opacity: 1; /* Показываем черный фон при наведении */
+}
+
+#space-container:hover .star {
+  animation: fly 3s linear infinite;
+  opacity: 1; /* Показываем звёзды при наведении */
+}
+
+/* Задержки для плавного появления */
+#space-container:hover .star:nth-child(1) {
+  animation-delay: 0s;
+}
+#space-container:hover .star:nth-child(2) {
+  animation-delay: 0.3s;
+}
+#space-container:hover .star:nth-child(3) {
+  animation-delay: 0.6s;
+}
+#space-container:hover .star:nth-child(4) {
+  animation-delay: 0.9s;
+}
+#space-container:hover .star:nth-child(5) {
+  animation-delay: 1.2s;
+}
+#space-container:hover .star:nth-child(6) {
+  animation-delay: 1.5s;
+}
+#space-container:hover .star:nth-child(7) {
+  animation-delay: 1.8s;
+}
+#space-container:hover .star:nth-child(8) {
+  animation-delay: 2.1s;
+}
+#space-container:hover .star:nth-child(9) {
+  animation-delay: 2.4s;
+}
+#space-container:hover .star:nth-child(10) {
+  animation-delay: 2.7s;
+}
+#space-container:hover .star:nth-child(11) {
+  animation-delay: 3s;
+}
+#space-container:hover .star:nth-child(12) {
+  animation-delay: 3.3s;
+}
+#space-container:hover .star:nth-child(13) {
+  animation-delay: 3.6s;
+}
+#space-container:hover .star:nth-child(14) {
+  animation-delay: 3.9s;
+}
+#space-container:hover .star:nth-child(15) {
+  animation-delay: 4.2s;
+}
+#space-container:hover .star:nth-child(16) {
+  animation-delay: 4.5s;
+}
+#space-container:hover .star:nth-child(17) {
+  animation-delay: 4.8s;
+}
+#space-container:hover .star:nth-child(18) {
+  animation-delay: 5.1s;
+}
+#space-container:hover .star:nth-child(19) {
+  animation-delay: 5.4s;
+}
+#space-container:hover .star:nth-child(20) {
+  animation-delay: 5.7s;
+}
+
+/* Случайные направления для каждой звезды */
+.star:nth-child(1) {
+  --x: 100px;
+  --y: -150px;
+}
+.star:nth-child(2) {
+  --x: -200px;
+  --y: 100px;
+}
+.star:nth-child(3) {
+  --x: 150px;
+  --y: 200px;
+}
+.star:nth-child(4) {
+  --x: -100px;
+  --y: -250px;
+}
+.star:nth-child(5) {
+  --x: 250px;
+  --y: 50px;
+}
+.star:nth-child(6) {
+  --x: -150px;
+  --y: -100px;
+}
+.star:nth-child(7) {
+  --x: 200px;
+  --y: -200px;
+}
+.star:nth-child(8) {
+  --x: -50px;
+  --y: 150px;
+}
+.star:nth-child(9) {
+  --x: 300px;
+  --y: 100px;
+}
+.star:nth-child(10) {
+  --x: -250px;
+  --y: -50px;
+}
+.star:nth-child(11) {
+  --x: 50px;
+  --y: 300px;
+}
+.star:nth-child(12) {
+  --x: -300px;
+  --y: 200px;
+}
+.star:nth-child(13) {
+  --x: 100px;
+  --y: -300px;
+}
+.star:nth-child(14) {
+  --x: -150px;
+  --y: -150px;
+}
+.star:nth-child(15) {
+  --x: 200px;
+  --y: 250px;
+}
+.star:nth-child(16) {
+  --x: -200px;
+  --y: 50px;
+}
+.star:nth-child(17) {
+  --x: 250px;
+  --y: -100px;
+}
+.star:nth-child(18) {
+  --x: -100px;
+  --y: 200px;
+}
+.star:nth-child(19) {
+  --x: 150px;
+  --y: -250px;
+}
+.star:nth-child(20) {
+  --x: -300px;
+  --y: -200px;
+}
+
+.neon-rectangle {
+  width: clamp(150px, calc(120% - 20px), 328px);
+  aspect-ratio: 1 / 1; /*
+ width: 100%; */
+  height: 100%;
+  border: 3px solid #f0f;
+  border-radius: 10px;
+  box-shadow:
+    0 0 5px #f0f,
+    0 0 10px #0ff,
+    0 0 20px #f0f,
+    0 0 40px #0ff,
+    0 0 80px #f0f,
+    0 0 120px #0ff,
+    inset 0 0 10px #f0f,
+    inset 0 0 20px #0ff;
+
+  opacity: 0;
+  animation: neon-flicker 3s linear infinite;
+  animation-play-state: paused;
+}
+
+.neon-container:hover .neon-rectangle {
+  opacity: 1;
+  animation-play-state: running;
+}
+
+#container:hover .neon-rectangle {
+  animation-play-state: running;
+  opacity: 1;
+}
+
+@keyframes neon-flicker {
+  0% {
+    box-shadow:
+      0 0 5px #f0f,
+      0 0 10px #0ff,
+      0 0 20px #f0f,
+      0 0 40px #0ff,
+      0 0 80px #f0f,
+      0 0 120px #0ff,
+      inset 0 0 10px #f0f,
+      inset 0 0 20px #0ff;
+    opacity: 1;
+  }
+  20% {
+    box-shadow:
+      0 0 3px #f0f,
+      0 0 7px #0ff,
+      0 0 15px #f0f,
+      0 0 30px #0ff,
+      0 0 60px #f0f,
+      0 0 90px #0ff,
+      inset 0 0 8px #f0f,
+      inset 0 0 15px #0ff;
+    opacity: 0.9;
+  }
+  40% {
+    box-shadow: none;
+    opacity: 0.7;
+  }
+  60% {
+    box-shadow:
+      0 0 4px #f0f,
+      0 0 8px #0ff,
+      0 0 18px #f0f,
+      0 0 35px #0ff,
+      0 0 70px #f0f,
+      0 0 110px #0ff,
+      inset 0 0 9px #f0f,
+      inset 0 0 18px #0ff;
+    opacity: 0.8;
+  }
+  80% {
+    box-shadow:
+      0 0 6px #f0f,
+      0 0 12px #0ff,
+      0 0 22px #f0f,
+      0 0 42px #0ff,
+      0 0 85px #f0f,
+      0 0 130px #0ff,
+      inset 0 0 11px #f0f,
+      inset 0 0 22px #0ff;
+    opacity: 0.95;
+  }
+  100% {
+    box-shadow:
+      0 0 7px #f0f,
+      0 0 14px #0ff,
+      0 0 25px #f0f,
+      0 0 45px #0ff,
+      0 0 90px #f0f,
+      0 0 140px #0ff,
+      inset 0 0 12px #f0f,
+      inset 0 0 25px #0ff;
+    opacity: 1;
+  }
+}
+
+/*
+Погоня за идеалом Карточка_4
+
+Карточка_4  неоновая лампа
+------- */
+
+/* Ключевая анимация пульсации лампы карточка 4 */
+@keyframes neon-pulse {
+  0% {
+    box-shadow: 0 0 20px 5px rgba(255, 0, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px 10px rgba(255, 0, 255, 1);
+  }
+  100% {
+    box-shadow: 0 0 20px 5px rgba(255, 0, 255, 0.3);
+  }
+}
+
+/* Определение анимации neon-pulse */
+@keyframes neon-pulse {
+  from {
+    box-shadow:
+      0 0 5px #0ff,
+      0 0 10px #0ff;
+    opacity: 0.8;
+  }
+  to {
+    box-shadow:
+      0 0 20px #0ff,
+      0 0 30px #0ff;
+    opacity: 1;
+  }
+}
+
+/* ---
+Картотчка_5 Анимация букв в блоке помощи
+---*/
+@keyframes switchSymbols {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: center center; /* точка масштабирования */
+  }
+  40% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes onSymbols {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hover-block_qnd {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.text-container_qnd {
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  transition: opacity 0.5s ease;
+}
+
+.question_qnd {
+  font-size: 40vw;
+}
+
+.exclamation_qnd {
+  font-size: 9vw;
+}
+
+.question_qnd,
+.exclamation_qnd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s ease;
+}
+
+/* Исходное состояние: виден только ? */
+.question_qnd {
+  opacity: 1;
+  animation: switchSymbols 2s infinite paused;
+}
+
+.exclamation_qnd {
+  opacity: 0;
+  /* Анимация с задержкой 1 секунда */
+  animation: switchSymbols 2s 1s infinite paused;
+}
+
+/* Запуск анимаций при наведении */
+.hover-block_qnd:hover .question_qnd,
+.hover-block_qnd:hover .exclamation_qnd {
+  animation-play-state: running;
+}
+
+.khover-block_qnd:hover .text-container_qnd {
+  animation: onSymbols 5s paused;
+}
+
+/* Карточка_5 */
+
+/* Появление объектов */
+@keyframes fadeInLeftTop {
+  from {
+    opacity: 0;
+    transform: translateX(-130px) translateY(-130px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes fadeInRightTop {
+  from {
+    opacity: 0;
+    transform: translateX(230px) translateY(-130px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes fadeInRightBottom {
+  from {
+    opacity: 0;
+    transform: translateX(230px) translateY(130px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes fadeInLeftBottom {
+  from {
+    opacity: 0;
+    transform: translateX(-130px) translateY(130px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-130px) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(230px) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/*
+Обходные стратегии Карточка_6
+*/
+
+.bin-code {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 1.4s ease;
+}
+
+.card-image__bin-code {
+  z-index: 1;
+  /*  opacity: 10%;*/
+}
+
+.code-rain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 0, 0) 0%,
+    /*  rgba(0, 255, 0, 0.2) 50%, */ #0bcdff,
+    rgba(0, 255, 0, 0) 100%
+  );
+  opacity: 0;
+  transition: 0.3s;
+  mix-blend-mode: luminosity;
+  /* mix-blend-mode: darken; */
+  z-index: 3;
+}
+
+.bin-code:hover {
+  border: 2px solid #0bcdff;
+  outline: 2px solid #0bcdff;
+  opacity: 40%;
+}
+
+.bin-code:hover .code-rain {
+  opacity: 1;
+  animation: rain 3s linear infinite;
+}
+
+@keyframes rain {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.base-image {
+  width: 100%;
+  height: auto;
+}
+
+.highlight-image {
+  mix-blend-mode: screen;
+  opacity: 0.5;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*
+Когда опускаются руки Карточка_7
+*/
+
+/* -------
+Карточка_7 анимация солнца
+ Анимация движения справа налево */
+@keyframes moveSun {
+  0% {
+    right: -10px;
+    transform: translateY(0);
+  }
+  50% {
+    right: calc(50% - 30px); /* середина блока */
+    transform: translateY(-15px);
+  }
+  100% {
+    right: calc(100% - 60px); /* останавливается слева */
+    transform: translateY(0);
+  }
+}
+
+/* Анимация пульсации */
+@keyframes pulseSun {
+  0%,
+  100% {
+    box-shadow:
+      0 0 40px #ffa500,
+      0 0 80px rgba(255, 165, 0, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 0 60px #ffa500,
+      0 0 150px rgba(255, 165, 0, 0.9);
+    transform: scale(1.1);
+  }
+}
+
+/* Движение блика */
+@keyframes moveGlare {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  33% {
+    transform: translateX(5px) translateY(-3px);
+  }
+  66% {
+    transform: translateX(-2px) translateY(4px);
+  }
+  100% {
+    transform: translateX(3px) translateY(-2px);
+  }
+}
+
+/* Задержка для каждой волны */
+.wave-ring:nth-child(1) {
+  animation-delay: 0s;
+}
+.wave-ring:nth-child(2) {
+  animation-delay: 1s;
+}
+.wave-ring:nth-child(3) {
+  animation-delay: 2s;
+}
+
+/* Анимация круговых волн */
+@keyframes expandWave {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.8;
+    border-width: 2px;
+  }
+  50% {
+    opacity: 0.4;
+    border-width: 1px;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    border-width: 0;
+  }
+}
+
+/*
+«Сейчас я здесь» Карточка_8
+*/
